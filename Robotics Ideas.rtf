@@ -8,7 +8,7 @@
 \csgray\c79525;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
 {\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
-{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid202\'02\'01.;}{\levelnumbers\'01;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid203\'02\'02.;}{\levelnumbers\'01;}\fi-360\li2160\lin2160 }{\listname ;}\listid3}}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid202\'02\'01.;}{\levelnumbers\'01;}\fi-360\li1440\lin1440 }{\listname ;}\listid3}}
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
 \margl1440\margr1440\vieww9100\viewh7600\viewkind0
 \deftab720
@@ -182,16 +182,45 @@ This one feels like a slightly better balance of difficulty. It would require me
 \f0 Code: {\field{\*\fldinst{HYPERLINK "https://create.arduino.cc/editor/mertarduinotech/3579a977-1a17-4d8e-ba2a3edcd44a7d40/preview"}}{\fldrslt \cf2 \ul \ulc2 https://create.arduino.cc/editor/mertarduinotech/3579a977-1a17-4d8e-ba2a3edcd44a7d40/preview}} <- It\'92s really nicely abstracted and easy to change\
 \pard\pardeftab720\ri0\partightenfactor0
 
-\f3\b \cf0 \ul \ulc0  Steps: 
-\f0\b0 \ulnone \
-\pard\tx1660\tx2160\tx2880\pardeftab720\li2160\fi-2160\ri0\partightenfactor0
-\ls3\ilvl2\cf0 {\listtext	1.	} Start 3D printing the model. While the model\'92s printing, do: \
-{\listtext	2.	}Attach the sensor to the Arduino, and set up the code for it. Make sure it works.\
-{\listtext	3.	}Attach the motors to the Arduino, and make sure the sensor can affect the motors. \
-{\listtext	4.	}When the model finishes printing, put everything together. \
-{\listtext	5.	}Code the sensors \
+\f3\b\fs28 \cf0 \ul \ulc0 MILE STONES: \
+
+\f0\b0\fs24 \ulnone \
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f3\b \cf0 MVP:
+\f0\b0 \
+- Learn the basics of Arduino \
+	-> basic syntax, the serial monitor, etc\'85 \
+- Test out the switch sensor & the motors, \
+	-> make sure can be controlled by Arduino\
+- Put the eyeball together\
+	-> 3D print everything\
+	-> put it together\
+- Code the eyeball\
+	-> the joystick\'92s x axis controls the amount the eyelid is closed \
+	-> the joystick\'92s y axis controls the eye\'92s side-to-side movement\
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f3\b \cf0 \
+
+\f0\b0 - Try using the joystick\'92s switch to control the eyeball \
+	-> it can override the eyelid control and force the eye to blink or close\
+\
 \pard\tx940\tx1440\tx2160\tx2880\pardeftab720\li1440\fi-1440\ri0\partightenfactor0
-\ls3\ilvl1\cf0 		If there\'92s extra time: Do steps 2-3 with an ultrasonic sensor, and try adding an ultrasonic sensor to the eye that makes the eye react when people get too close. \
+\ls3\ilvl1
+\f3\b \cf0 If there\'92s extra time: 
+\f0\b0 \
+Try adding an ultrasonic sensor to the eye \
+that makes the eye react when people get too close. \
+\
+OR\
+\
+\ls3\ilvl1
+\f3\b If there\'92s even MORE time: 
+\f0\b0 \
+Try using computer vision to see people, and make the eye react when it recognizes \uc0\u7491  \
+face. \
 \pard\tx720\tx1440\tx2160\tx2880\pardeftab720\ri0\partightenfactor0
 \cf0 \
+\
 }
