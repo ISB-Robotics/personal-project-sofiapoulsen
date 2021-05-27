@@ -1,9 +1,12 @@
+//https://learn.sparkfun.com/tutorials/connecting-arduino-to-processing/all
+
 char val; // Data received from the serial port
 int ledPin = 13; //pin 13 is the on-board LED
 
 void setup() {
   pinMode(ledPin, OUTPUT); // not sure what this means, oh well
   Serial.begin(9600);
+  //Serial: used for communication between the Arduino board and a computer
 }
 
 void loop() {
